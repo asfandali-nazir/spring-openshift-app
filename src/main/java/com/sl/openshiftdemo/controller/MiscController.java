@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/")
 public class MiscController {
-  WebClient client = WebClient.create("172.30.143.246:8080");
+  WebClient client = WebClient.create("http://172.30.143.246:8080");
 
   @GetMapping
   public String sayHello() {
